@@ -50,3 +50,6 @@ async def websocket_endpoint(websocket: WebSocket):
             await websocket.send_text(json.dumps(response))
         else:
             await websocket.send_text(json.dumps({"error": "No verse detected."}))
+
+
+#end 
